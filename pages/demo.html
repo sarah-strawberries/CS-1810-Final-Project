@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/home-design-site.css">
+    <script src="js/navmenu.js" type="module"></script>
+    <title>Demo</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>HomeVisualize</h1>
+        </header>
+        <nav></nav>
+        <h2>Demo</h2>
+
+        <div id="demo-container">
+            <!-- <script src="js/three.js"></script>
+            <script src="js/demo.js"></script> -->
+            
+            <script type="module">
+
+                import * as THREE from './js/three.module.js';
+                import { APP } from './js/app.js';
+                import { VRButton } from './js/VRButton.js';
+    
+                window.THREE = THREE; // Used by APP Scripts.
+                window.VRButton = VRButton; // Used by APP Scripts.
+    
+                var loader = new THREE.FileLoader();
+                loader.load( 'app.json', function ( text ) {
+    
+                    var player = new APP.Player();
+                    player.load( JSON.parse( text ) );
+                    player.setSize( window.innerWidth, window.innerHeight * 0.75 );
+                    player.play();
+    
+                    document.body.appendChild( player.dom );
+    
+                    window.addEventListener( 'resize', function () {
+    
+                        player.setSize( window.innerWidth, window.innerHeight * 0.75 );
+    
+                    } );
+    
+                } );
+
+            </script>
+    
+        </div>
+        <footer>
+            © December 2022. All rights reserved.
+        </footer>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+div.content-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+p.quote {
+    font-size: larger;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+.review {
+    text-align: center;
+    word-wrap: normal;
+}
+
+.widget-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.widget {
+    max-width: 100%;
+}
+
+#review-bar {
+    padding: 1em;
+}
+
+header {
+    min-height: 10vw;
+    text-align: center;
+    background-image: url("/3D-Rendering-Images/Eagle-Mtn-House/front-door-south-view.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+}
+
+h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(133, 133, 133), 0 0 0.2em rgb(133, 133, 133);
+    vertical-align: middle;
+}
+
+h2 {
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: .1rem;
+    text-align: center;
+}
+
+.pricing {
+    border-color: darkgrey;
+    border-radius: 1px;
+    border-style: dashed;
+    padding: 1em;
+}
+
+/* small screen width (e.g. cell phone) */
+@media screen and (min-width: 350px) {
+    .widget-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* medium screen width (e.g. iPad) */
+@media screen and (min-width: 500px) {
+    .widget-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .widget {
+        max-width: 40%;
+        margin: 2em;
+    }
+}
