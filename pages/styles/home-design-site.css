@@ -90,11 +90,12 @@ footer {
     text-align: center;
 }
 
-.pricing {
+div.pricing {
     border-color: darkgrey;
     border-radius: 1px;
     border-style: dashed;
     padding: 1em;
+    box-shadow: none;
 }
 
 /* small screen width (e.g. cell phone) */
