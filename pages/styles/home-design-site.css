@@ -34,9 +34,20 @@ label {
     word-wrap: normal;
 }
 
+.grid-container {
+    display: grid;
+
+    grid-template-columns: 50vw 50vw;
+}
+
+.grid-widget {
+    margin: 1em;
+}
+
 .widget-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .widget {
@@ -63,7 +74,7 @@ h1 {
     vertical-align: middle;
 }
 
-h2 {
+h2, h3 {
     text-align: center;
 }
 
@@ -87,6 +98,7 @@ footer {
     .widget-container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -95,6 +107,7 @@ footer {
     .widget-container {
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
 
     .widget {

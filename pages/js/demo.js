@@ -43,29 +43,33 @@ document.body.appendChild(renderer.domElement);
 // scene.add(polyhedron);
  // -----------
  
- // const geometry = new THREE.BoxGeometry(1, 1, 1);
- // const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
- // const cube = new THREE.Mesh(geometry, material);
- // cube.geometry
- // scene.add(cube);
+ const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
+ const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+ const cube = new THREE.Mesh(cubeGeometry, material);
+ cube.geometry
+ scene.add(cube);
 
- const geometry = new THREE.BufferGeometry();
- // create a simple square shape. We duplicate the top left and bottom right
- // vertices because each vertex needs to appear once per triangle.
- const vertices = new Float32Array( [
-	 -1.0, -1.0,  1.0,
-	  1.0, -1.0,  1.0,
-	  1.0,  1.0,  1.0,
+//  const pyramidGeometry = new THREE.pyramidGeometry(5, 8, 3)
+//  const pyramid = new THREE.Mesh(pyramidGeometry, material);
+//  scene.add(cone);
+
+//  const geometry = new THREE.BufferGeometry();
+//  // create a simple square shape. We duplicate the top left and bottom right
+//  // vertices because each vertex needs to appear once per triangle.
+//  const vertices = new Float32Array( [
+// 	 -1.0, -1.0,  1.0,
+// 	  1.0, -1.0,  1.0,
+// 	  1.0,  1.0,  1.0,
  
-	  1.0,  1.0,  1.0,
-	 -1.0,  1.0,  1.0,
-	 -1.0, -1.0,  1.0
- ] );
+// 	  1.0,  1.0,  1.0,
+// 	 -1.0,  1.0,  1.0,
+// 	 -1.0, -1.0,  1.0
+//  ] );
  
- // itemSize = 3 because there are 3 values (components) per vertex
- geometry.setAttribute( 'position', new THREE.BufferAttribute( vertices, 3 ) );
- const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
- const cube = new THREE.Mesh( geometry, material );
+//  // itemSize = 3 because there are 3 values (components) per vertex
+//  geometry.setAttribute( 'position', new THREE.BufferAttribute( vertices, 3 ) );
+//  const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+//  const cube = new THREE.Mesh( geometry, material );
 
 
 camera.position.z = 5;

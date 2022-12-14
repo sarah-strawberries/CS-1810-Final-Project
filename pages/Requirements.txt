@@ -1,3 +1,9 @@
+FINAL PROJECT REQUIREMENTS
+==========================
+
+The latest available version of the final project code can be found here:
+https://github.com/sarah-strawberries/CS-1810-Final-Project
+
 REQUIREMENT 1:
 
     At least 10 different HTML elements
@@ -34,7 +40,7 @@ REQUIREMENT 2:
 
 REQUIREMENT 3: 
     At least one image with correct alt attribute
-
+    This requirement is met on the home.html page.
 
 REQUIREMENT 4: 
     At least 10 of your own hand-crafted css rules
@@ -58,7 +64,7 @@ REQUIREMENT 5:
 
 REQUIREMENT 6: 
     CSS grid
-*
+    This requirement is met by using CSS grid for the layout of the contact.html page.
 
 REQUIREMENT 7: 
     At least 2 media queries (to support mobile and tablet sized displays) on a page
@@ -70,14 +76,33 @@ REQUIREMENT 8:
     This requirement is met by the event listener in navmenu.js (which uses an event listener on the window load event to inject links into the navigation menu) and also through numerous uses of addEventListener in the code for the Threejs demo.
 
 
-REQUIREMENT 9: 
+* REQUIREMENT 9: 
     At least 2 instances where you use document.querySelector or querySelectorAll
-*
+    I halfway fulfilled this requirement; I used one document.querySelector in the navmenu.js file.
 
-REQUIREMENT 10: 
+
+* REQUIREMENT 10: 
     Ajax to interact with an API
-*
+    I unfortunately did not fulfill this requirement.
+
 
 REQUIREMENT 11: 
     A javascript class or javascript modules
     This requirement is fulfilled through the javascript modules used in the Threejs demo.
+
+
+--------------------------------------------------------------------------------------------
+
+ADDITIONAL REQUIREMENTS FROM HONORS CONTRACT
+
+* REQUIRMENT 1:
+    At least one 3D click-and-draggable demo of an example house design, programmed using Three.js
+    This requirement is partially complete; the 3D demo exists but is not yet click-and-draggable.
+
+REQUIREMENT 2:
+    3 rounds of user interviews at different stages of the updateProjectionMatrix
+
+    Round 1 was completed Sat., Nov. 26, 2022. I interviewed my parents and a few of my siblings and 
+    showed them a set of wireframes, and afterwards I adapted my project based on the feedback.
+
+    Rounds 2 and 3 have not yet been completed (but should be by the end of the week).
