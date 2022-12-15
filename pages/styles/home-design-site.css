@@ -6,6 +6,32 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: static;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: darkgray;
+}
+
+nav a:active {
+    text-decoration: none;
+    color: darkgray;
 }
 
 /* canvas {
@@ -85,7 +111,7 @@ h2, h3 {
 
 footer {
     position: absolute;
-    bottom: 0;
+    bottom: 2px;
     width: 100%;
     height: .1rem;
     text-align: center;
