@@ -1,3 +1,4 @@
+// need to resolve dependencies on imported modules below ('three' should be a URL or a valid filepath)
 import {
 	EventDispatcher,
 	MOUSE,
