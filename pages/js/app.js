@@ -24,7 +24,7 @@ var APP = {
 		this.height = 500;
 
 		this.load = function (json) {
-
+			
 			var project = json.project;
 
 			if (project.vr !== undefined) renderer.xr.enabled = project.vr;
@@ -36,6 +36,8 @@ var APP = {
 
 			this.setScene(loader.parse(json.scene));
 			this.setCamera(loader.parse(json.camera));
+
+			var controls = new OrbitControls(camera, renderer.domElement); // added to allow orbit controls
 
 			events = {
 				init: [],
@@ -61,7 +63,7 @@ var APP = {
 
 			var scriptWrapResult = JSON.stringify(scriptWrapResultObj).replace(/\"/g, '');
 
-			const house = new THREE.Group();
+			// const house = new THREE.Group();
 
 			for (var uuid in json.scripts) {
 
@@ -82,7 +84,9 @@ var APP = {
 
 					var functions = (new Function(scriptWrapParams, script.source + '\nreturn ' + scriptWrapResult + ';').bind(object))(this, renderer, scene, camera);
 
-					house.add(object);
+					// let house = object;
+
+					// let clickAndDrag = new OrbitControls( house, dom);
 
 					for (var name in functions) {
 
@@ -103,7 +107,6 @@ var APP = {
 
 			}
 
-			clickAndDrag = new OrbitControls( house, dom);
 
 			dispatch(events.init, arguments);
 

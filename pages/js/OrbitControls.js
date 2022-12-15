@@ -1,4 +1,3 @@
-// need to resolve dependencies on imported modules below ('three' should be a URL or a valid filepath)
 import {
 	EventDispatcher,
 	MOUSE,
@@ -7,7 +6,7 @@ import {
 	TOUCH,
 	Vector2,
 	Vector3
-} from 'three';
+} from './three.module.js';
 
 // This set of controls performs orbiting, dollying (zooming), and panning.
 // Unlike TrackballControls, it maintains the "up" direction object.up (+Y by default).

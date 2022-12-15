@@ -22,37 +22,39 @@
         <div id="demo-container">
             <!-- <script src="js/three.js"></script>
             <script src="js/demo.js"></script> -->
-            
+
+            <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
             <script type="module">
 
                 import * as THREE from './js/three.module.js';
                 import { APP } from './js/app.js';
                 import { VRButton } from './js/VRButton.js';
-                // import { OrbitControls } from 'pages\js\OrbitControls.js';
-    
+                import { OrbitControls } from './js/OrbitControls.js';
+                window.OrbitControls = OrbitControls;
+
                 window.THREE = THREE; // Used by APP Scripts.
                 window.VRButton = VRButton; // Used by APP Scripts.
-    
+
                 var loader = new THREE.FileLoader();
-                loader.load( 'app.json', function ( text ) {
-    
+                loader.load('app.json', function (text) {
+
                     var player = new APP.Player();
-                    player.load( JSON.parse( text ) );
-                    player.setSize( window.innerWidth, window.innerHeight * 0.75 );
+                    player.load(JSON.parse(text));
+                    player.setSize(window.innerWidth, window.innerHeight * 0.75);
                     player.play();
-    
-                    document.body.appendChild( player.dom );
-    
-                    window.addEventListener( 'resize', function () {
-    
-                        player.setSize( window.innerWidth, window.innerHeight * 0.75 );
-    
-                    } );
-    
-                } );
+
+                    document.body.appendChild(player.dom);
+
+                    window.addEventListener('resize', function () {
+
+                        player.setSize(window.innerWidth, window.innerHeight * 0.75);
+
+                    });
+
+                });
 
             </script>
-    
+
         </div>
         <footer>
             © December 2022. All rights reserved.
