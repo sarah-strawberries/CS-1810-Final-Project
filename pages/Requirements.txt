@@ -105,4 +105,9 @@ REQUIREMENT 2:
     Round 1 was completed Sat., Nov. 26, 2022. I interviewed my parents and a few of my siblings and 
     showed them a set of wireframes, and afterwards I adapted my project based on the feedback.
 
-    Rounds 2 and 3 have not yet been completed (but should be by the end of the week).
+    Round 2 was completed Wed., Dec. 14, 2022 when I interviewed my roommate Chassel. I showed her a 
+    couple of different versions of CSS styling of the page and got feedback on them to decide which 
+    styles to keep.
+    
+    Round 3 was completed Fri., Dec. 16, 2022. I interviewed my friend Karly, got some feedback on the
+    styles I was using, and modified accordingly.
