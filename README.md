@@ -17,3 +17,4 @@ disciplinary connections by providing Sarah with opportunities for the pursuit o
 preneurial experience and for the development of communication and interpersonal skills."
 
 GitHub Pages URL:
+https://sarah-strawberries.github.io/CS-1810-Final-Project/
