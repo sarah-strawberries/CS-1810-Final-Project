@@ -34,6 +34,7 @@ nav a:active {
     color: darkgray;
 }
 
+/* May be causing the demo to look squished. Intended to create white space on sides of demo. */
 canvas {
     max-width: 90vw;
     max-height: 90vw;
