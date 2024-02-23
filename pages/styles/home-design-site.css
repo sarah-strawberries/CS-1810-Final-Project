@@ -2,6 +2,12 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -32,6 +38,7 @@ nav a:hover {
 nav a:active {
     text-decoration: none;
     color: darkgray;
+    color: rgb(255, 255, 255);
 }
 
 /* May be causing the demo to look squished. Intended to create white space on sides of demo. */
