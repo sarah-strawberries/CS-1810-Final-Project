@@ -22,7 +22,7 @@ function insertNavMenu() {
         let link = document.createElement("a");
 
         // add attributes to link element
-        if (element.toLowerCase().includes("CS-1810-Final-Project")) {
+        if (element.includes("CS-1810-Final-Project")) {
             link.href = element.toLowerCase();
             link.innerText = linkText;
         }
