@@ -2,11 +2,11 @@ window.addEventListener('load', insertNavMenu)
 
 let navLinks = [
     "/pages/Home.html", 
-    "/pages/About.html", 
-    "/pages/Demo.html", 
-    "/pages/Pricing.html", 
-    "/pages/Gallery.html",
-    "/pages/Contact.html"
+    "CS-1810-Final-Project/pages/About.html", 
+    "CS-1810-Final-Project/pages/Demo.html", 
+    "CS-1810-Final-Project/pages/Pricing.html", 
+    "CS-1810-Final-Project/pages/Gallery.html",
+    "CS-1810-Final-Project/pages/Contact.html"
 ]
 
 function insertNavMenu() {
@@ -22,14 +22,14 @@ function insertNavMenu() {
         let link = document.createElement("a");
 
         // add attributes to link element
-        if (element.includes("CS-1810-Final-Project")) {
+        // if (element.includes("CS-1810-Final-Project")) {
             link.href = element.toLowerCase();
             link.innerText = linkText;
-        }
-        else {         
-            link.href = "CS-1810-Final-Project" + element.toLowerCase();
-            link.innerText = linkText;
-        }
+        // }
+        // else {         
+        //     link.href = "CS-1810-Final-Project" + element.toLowerCase();
+        //     link.innerText = linkText;
+        // }
         link.style = "padding: 0.5em;"
 
         // append link to navMenu div
