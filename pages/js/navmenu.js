@@ -22,8 +22,14 @@ function insertNavMenu() {
         let link = document.createElement("a");
 
         // add attributes to link element
-        link.href = element.toLowerCase();
-        link.innerText = linkText;
+        if (element.toLowerCase().includes("CS-1810-Final-Project")) {
+            link.href = element.toLowerCase();
+            link.innerText = linkText;
+        }
+        else {         
+            link.href = "CS-1810-Final-Project/" + element.toLowerCase();
+            link.innerText = linkText;
+        }
         link.style = "padding: 0.5em;"
 
         // append link to navMenu div
