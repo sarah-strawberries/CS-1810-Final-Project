@@ -1,39 +1,42 @@
 window.addEventListener('load', insertNavMenu)
 
 let navLinks = [
-    "/pages/Home.html", 
-    "/pages/About.html", 
-    "/pages/Demo.html", 
-    "/pages/Pricing.html", 
-    "/pages/Gallery.html",
-    "/pages/Contact.html"
+    "Home.html", 
+    "About.html", 
+    "Demo.html", 
+    "Pricing.html", 
+    "Gallery.html",
+    "Contact.html"
 ]
+
+let navText = [
+    "Home", 
+    "About", 
+    "Demo", 
+    "Pricing", 
+    "Gallery",
+    "Contact"
+]
+let n = 0;
 
 function insertNavMenu() {
     let navMenu = document.createElement('div');
     navMenu.style = "display:flex; align-items:center; justify-content:center;";
     navLinks.forEach(element => {
-
-        // save link inner text to a variable 
-        let linkText = element.substring(7, element.length - 1);
-        linkText = linkText.split('.')[0];
+        // save link text to a variable 
+        let linkText = navText[n];
 
         // create link element
         let link = document.createElement("a");
 
         // add attributes to link element
-        // if (element.includes("CS-1810-Final-Project")) {
-            link.href = element.toLowerCase();
-            link.innerText = linkText;
-        // }
-        // else {         
-        //     link.href = "CS-1810-Final-Project" + element.toLowerCase();
-        //     link.innerText = linkText;
-        // }
+        link.href = element.toLowerCase();
+        link.innerText = linkText;
         link.style = "padding: 0.5em;"
 
         // append link to navMenu div
         navMenu.appendChild(link);
+        n++;
     });
 
     // append navMenu div to nav element in document
