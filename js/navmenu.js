@@ -1,12 +1,12 @@
 window.addEventListener('load', insertNavMenu)
 
 let navLinks = [
-    "Home.html", 
-    "About.html", 
-    "Demo.html", 
-    "Pricing.html", 
-    "Gallery.html",
-    "Contact.html"
+    "index.html", 
+    "about.html", 
+    "demo.html", 
+    "pricing.html", 
+    "gallery.html",
+    "contact.html"
 ]
 
 let navText = [
