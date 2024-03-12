@@ -27,7 +27,7 @@ function insertNavMenu() {
             link.innerText = linkText;
         }
         else {         
-            link.href = "/CS-1810-Final-Project" + element.toLowerCase();
+            link.href = "CS-1810-Final-Project" + element.toLowerCase();
             link.innerText = linkText;
         }
         link.style = "padding: 0.5em;"
