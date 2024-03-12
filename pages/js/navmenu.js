@@ -2,11 +2,11 @@ window.addEventListener('load', insertNavMenu)
 
 let navLinks = [
     "/pages/Home.html", 
-    "CS-1810-Final-Project/pages/About.html", 
-    "CS-1810-Final-Project/pages/Demo.html", 
-    "CS-1810-Final-Project/pages/Pricing.html", 
-    "CS-1810-Final-Project/pages/Gallery.html",
-    "CS-1810-Final-Project/pages/Contact.html"
+    "/pages/About.html", 
+    "/pages/Demo.html", 
+    "/pages/Pricing.html", 
+    "/pages/Gallery.html",
+    "/pages/Contact.html"
 ]
 
 function insertNavMenu() {
