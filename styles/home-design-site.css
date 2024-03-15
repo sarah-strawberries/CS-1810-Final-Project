@@ -105,22 +105,30 @@ label {
 header {
     min-height: 10vw;
     text-align: center;
-    background-image: url("/3D-Rendering-Images/Eagle-Mtn-House/front-door-south-view.jpg");
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgb(87, 187, 51);
     vertical-align: middle;
+    align-items: center;
 }
 
 .logo {
     max-width: 100px;
+    padding: 6px;
+    vertical-align: middle;
+}
+
+.inline-block {
+    display: inline-flex;
 }
 
 h1 {
     color: white;
     text-shadow: 0.2em 0.2em 0.4em black, 0 0 1em rgb(133, 133, 133), 0 0 0.2em rgb(133, 133, 133);
-    vertical-align: middle;
     font-size: 7.5vw;
+}
+
+.blue-text {
+    color: rgb(20, 199, 201);
+    text-shadow: 0.2em 0.2em 0.4em black, 0 0 1em rgb(133, 133, 133), 0 0 0.2em rgb(133, 133, 133);
 }
 
 h2,
