@@ -2,6 +2,7 @@ window.addEventListener('load', insertHeaderAndFooter)
 
 function insertHeaderAndFooter() {
     insertHeader();
+    insertFooter();
 }
 
 function insertHeader() {
@@ -23,5 +24,6 @@ function insertHeader() {
 }
 
 function insertFooter() {
-
+    //
+    document.querySelector('footer').innerText = "© 2022-2024. All rights reserved.";
 }
