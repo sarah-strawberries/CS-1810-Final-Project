@@ -26,7 +26,11 @@ body{
 	/*width:100%;*/
 }
 .portfolio-item .item{
-	/*width:303px;*/
+	width:303px;
 	float:left;
 	margin-bottom:10px;
+}
+
+.gallery-tile {
+    max-height: 20vw;
 }
