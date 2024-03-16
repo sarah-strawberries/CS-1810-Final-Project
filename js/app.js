@@ -1,4 +1,4 @@
-import { OrbitControls } from "/pages/js/OrbitControls.js";
+import { OrbitControls } from "/js/OrbitControls.js";
 
 var APP = {
 
